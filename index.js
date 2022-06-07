@@ -29,11 +29,11 @@ function startTimer(){
         console.log(leftTime);
         sec.innerHTML = setNumber(leftTime);
         if(leftTime < 0){
-            clearInterval(interval);
             alert("Time out");
             sec.innerHTML = setNumber(0);
-            isTimerStart = false;
             toggleBtn(isTimerStart);
+            isTimerStart = false;
+            clearInterval(interval);
         }
         leftTime--;
     },1000);
