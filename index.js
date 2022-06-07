@@ -32,6 +32,8 @@ function startTimer(){
             clearInterval(interval);
             alert("Time out");
             sec.innerHTML = setNumber(0);
+            isTimerStart = false;
+            toggleBtn(isTimerStart);
         }
         leftTime--;
     },1000);
